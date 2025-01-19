@@ -11,22 +11,22 @@
 <body>
     <header>
         <div class="lol">
-            <img src="pencil.png" alt="pencil icon" width="30px">
-            <h2>NoteItDown</h2>
+            <img id="pencil" src="/images/pencil.png" alt="pencil icon" width="25px">
+            <h3>NoteItDown</h3>
         </div>
         <nav>
-            <a href="#"><img src="menu.png" id="menuImg" alt="menu icon" width="20px"></a>
+            <!-- <a href="#"><img src="/images/menu.png" id="menuImg" alt="menu icon" width="20px"></a> -->
             <div class="nav-links">
-                <a href="#">Account</a>
-                <a href="#">Notes</a>
-                <a href="#">Dark Mode</a>
+                <a id="home" href="#">Home</a>
+                <a id="account" href="#">Account</a>
+                <a id="notes" href="#">Notes</a>
             </div>
         </nav>
         
     </header>
 
     <main>
-        <section class="container">
+        <section id="container">
             <form>
                 <div class="box">
                     <label for="date">Enter Date:</label>
@@ -39,7 +39,7 @@
                     <textarea id="content" rows="5" placeholder="Write your stuff here.." required></textarea>
 
                     <div class="button-container">
-                        <button type="submit">Save My Notes</button>
+                        <button id="button" type="submit">Save My Notes</button>
                     </div>
                 </div>
             </form>
