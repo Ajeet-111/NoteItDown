@@ -6,6 +6,10 @@
 body {
     margin: 0;
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -28,6 +32,8 @@ header {
 
 header > .lol > img {
     margin-right: 10px;
+    cursor: grab;
+    
 }
 
 nav a img {
@@ -39,16 +45,18 @@ main {
     width: 80%;
     max-width: 700px;
     margin: 50px auto;
+    flex: 1;
+    /* border: 1px solid black; */
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fefefe;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(38, 38, 38, 0.1);
 }
 
 input, textarea {
@@ -87,7 +95,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
-    border-top: 1px solid #ccc;
+    /* border-top: 1px solid #ccc; */
     font-size: 14px;
 }
 
@@ -122,24 +130,21 @@ a:hover {
 }
 
 .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* top: 50px; */
+    /* right: 10px; */
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 1px solid #d8d8d8;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(44, 44, 44, 0.1);
-    padding: 15px;
+    margin: 15px;
 }
 
 .nav-links a {
-    padding: 10px 15px;
+    padding: 5px;
     color: #333;
     text-decoration: none;
-}
-
-.nav-links.show {
-    display: flex;
 }
